@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/splash"
+    android:fadingEdge="none"
+    android:orientation="vertical"
+    tools:context=".register">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/logo"></ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:cardCornerRadius="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="100dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="50dp"
+                app:cardPreventCornerOverlap="false"
+                card_view:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/centurygothic"
+                    android:text="Globe At Home number"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    >
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    app:boxCornerRadiusBottomStart="30dp"
+                    app:boxCornerRadiusBottomEnd="30dp"
+                    app:boxCornerRadiusTopEnd="30dp"
+                    app:boxCornerRadiusTopStart="30dp"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="165dp"
+                    android:fontFamily="@font/centurygothic"
+                    android:text="Username (Optional)"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    >
+                </TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="185dp"
+                    app:boxCornerRadiusBottomStart="30dp"
+                    app:boxCornerRadiusBottomEnd="30dp"
+                    app:boxCornerRadiusTopEnd="30dp"
+                    app:boxCornerRadiusTopStart="30dp"
+                    app:errorEnabled="true"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnwelcomethree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="270dp"
+                    android:padding="7dp"
+                    android:backgroundTint="#2A25C1"
+                    android:fontFamily="@font/centurygothic"
+                    android:textAlignment="center"
+                    android:text="SUBMIT"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:cornerRadius="50dp">
+                </com.google.android.material.button.MaterialButton>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="340dp"
+                    android:fontFamily="@font/centurygothic"
+                    android:text="Waiting for installaton?"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="350dp"
+                    android:fontFamily="@font/centurygothic"
+                    android:text="Track your status?"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    >
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

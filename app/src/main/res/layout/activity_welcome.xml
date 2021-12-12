@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/splash"
+    tools:context=".welcome"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        >
+    </ImageView>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:background="@drawable/img1"
+        android:layout_gravity="center_horizontal"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage your Postpaid Broadband or Prepaid WiFi accounts."
+        android:textSize="6pt"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="80dp"
+        android:fontFamily="@font/centurygothic"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnwelcome"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="7dp"
+        android:backgroundTint="#2A25C1"
+        android:fontFamily="@font/centurygothic"
+        android:textAlignment="center"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"></com.google.android.material.button.MaterialButton
+        >
+</LinearLayout>
