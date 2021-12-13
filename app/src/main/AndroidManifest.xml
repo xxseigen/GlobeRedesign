@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GlobeRedesignF">
         <activity
+            android:name=".dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".verificationthree"
+            android:exported="true" />
+        <activity
+            android:name=".verificationtwo"
+            android:exported="true" />
+        <activity
+            android:name=".verification"
+            android:exported="true" />
+        <activity
             android:name=".register"
             android:exported="true" />
         <activity

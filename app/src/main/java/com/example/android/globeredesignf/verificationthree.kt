@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class register : AppCompatActivity() {
+class verificationthree : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_verificationthree)
 
-        val btnregister = findViewById<Button>(R.id.btnregister)
-        btnregister.setOnClickListener {
-            val intent = Intent(this@register, verification::class.java)
+        val btndashboard = findViewById<Button>(R.id.btndashboard)
+        btndashboard.setOnClickListener {
+            val intent = Intent(this@verificationthree, dashboard::class.java)
             startActivity(intent)
         }
     }
